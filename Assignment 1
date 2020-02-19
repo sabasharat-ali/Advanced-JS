@@ -277,16 +277,32 @@ console.log(color.join('+'))
 
 //TASK 14
 
-// {
-//   const  randomNumbers =['3','a','a','a','2','3','a','3','a','2','4','9','3']
+{
+  const  randomNumbers =['3','a','a','a','2','3','3','2','4','9','3']
+  function theMost(array)
+  {
+  var result=array[0]
+  var temp = 0
+  for (let i = 0;i<array.length;i++)
+  {
+    var count = 0;
+    for(let j = 0;j<array.length;j++)
+    {
+      if(array[i]===[j])
+      {
+        count++
+      }
+    }
+    if(count > temp)
+    {
+      temp=count
+      result=array[i]
+    }
+  }
+  return result;
+}
 
-//   let unique = randomNumbers.reduce((acc,val) => {
-//     if(acc===val)
-//     {
-      
-//     }
-//   })
+  console.log(theMost(randomNumbers))
 
-// }
-
+}
 
