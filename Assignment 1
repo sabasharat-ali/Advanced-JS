@@ -106,15 +106,15 @@ console.log(remove({array1:[2,4,5,7,8,9],integer1:9}))
 //TASK 7
 
 {
-  const bla = (a,b) => {
-    const obj1={
-       bla2 =() =>
-      {
-          a:undefined
-          b:undefined
+  const myObj = {
+    nestedFunc: () => {
+      return {
+        name: firstValue,
+        age: secValue
       }
     }
   }
+  return myObj
 }
 
 //TASK 8(A)
